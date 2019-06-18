@@ -36,6 +36,14 @@ class SimpleDotComGame {
 			String result = dot.checkYourself(userGuess);
 			numOfGuesses++;
 
+			if (result.equals("hit")) {
+				System.out.println("Hit!");
+			}
+
+			if (result.equals("miss")) {
+				System.out.println("Missed!");
+			}
+
 			if (result.equals("kill")) {
 				isAlive = false;
 				System.out.println("You took " + numOfGuesses);
